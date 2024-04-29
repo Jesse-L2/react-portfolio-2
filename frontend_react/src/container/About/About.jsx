@@ -1,23 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+import { images } from "../../constants";
+
 import "./About.scss";
 const abouts = [
   {
     title: "Web Development",
     description: "Design extraordinaire",
-    imgURL: "",
+    imgURL: images.about01,
   },
-  { title: "UI/UX", description: "Watch it work", imgURL: "" },
-  { title: "Data Scientist", description: "Data driven", imgURL: "" },
+  { title: "UI/UX", description: "Watch it work", imgURL: images.about02 },
+  {
+    title: "Data Scientist",
+    description: "Data driven",
+    imgURL: images.about03,
+  },
 ];
 
 const About = () => {
   return (
     <>
       <h2 className="head-text">
-        The path to good business is
-        <span>Good Design</span>.
+        The path to good business is <span>Good Design</span>.
       </h2>
       <div className="app__profiles">
         {abouts.map((about, index) => (
