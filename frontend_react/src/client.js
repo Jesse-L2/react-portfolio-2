@@ -1,11 +1,11 @@
 /* Connects react app w/ sanity client */
-import { SanityClient } from "@sanity/client";
+import SanityClient from "@sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
 
 export const client = SanityClient({
   projectId: process.env.REACT_APP_PROJECT_ID,
   dataset: "production",
-  apiVersion: "2024-02-01",
+  // apiVersion: "",
   useCdn: true,
   token: process.env.REACT_APP_SANITY_TOKEN,
 });

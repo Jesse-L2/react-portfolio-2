@@ -16,6 +16,7 @@ const Work = () => {
     const query = '*[_type == "works"]';
 
     client.fetch(query).then((data) => {
+      /* States */
       setWorks(data);
       setFilterWork(data);
     });
