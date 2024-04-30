@@ -4,6 +4,7 @@
 import React from "react";
 
 const NavigationDots = ({ active }) => (
+  /* Active prop says which section user is currently on */
   <div className="app__navigation">
     {["home", "about", "work", "skills", "testimonial", "contact"].map(
       (item, index) => (
